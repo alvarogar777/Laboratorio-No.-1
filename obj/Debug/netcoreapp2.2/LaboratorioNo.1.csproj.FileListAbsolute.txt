@@ -1,0 +1,11 @@
+C:\Users\Alvaro\Documents\Visual\LaboratorioNo.1\bin\Debug\netcoreapp2.2\LaboratorioNo.1.deps.json
+C:\Users\Alvaro\Documents\Visual\LaboratorioNo.1\bin\Debug\netcoreapp2.2\LaboratorioNo.1.runtimeconfig.json
+C:\Users\Alvaro\Documents\Visual\LaboratorioNo.1\bin\Debug\netcoreapp2.2\LaboratorioNo.1.runtimeconfig.dev.json
+C:\Users\Alvaro\Documents\Visual\LaboratorioNo.1\bin\Debug\netcoreapp2.2\LaboratorioNo.1.dll
+C:\Users\Alvaro\Documents\Visual\LaboratorioNo.1\bin\Debug\netcoreapp2.2\LaboratorioNo.1.pdb
+C:\Users\Alvaro\Documents\Visual\LaboratorioNo.1\obj\Debug\netcoreapp2.2\LaboratorioNo.1.csprojAssemblyReference.cache
+C:\Users\Alvaro\Documents\Visual\LaboratorioNo.1\obj\Debug\netcoreapp2.2\LaboratorioNo.1.csproj.CoreCompileInputs.cache
+C:\Users\Alvaro\Documents\Visual\LaboratorioNo.1\obj\Debug\netcoreapp2.2\LaboratorioNo.1.AssemblyInfoInputs.cache
+C:\Users\Alvaro\Documents\Visual\LaboratorioNo.1\obj\Debug\netcoreapp2.2\LaboratorioNo.1.AssemblyInfo.cs
+C:\Users\Alvaro\Documents\Visual\LaboratorioNo.1\obj\Debug\netcoreapp2.2\LaboratorioNo.1.dll
+C:\Users\Alvaro\Documents\Visual\LaboratorioNo.1\obj\Debug\netcoreapp2.2\LaboratorioNo.1.pdb

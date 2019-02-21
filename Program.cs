@@ -10,8 +10,8 @@ namespace LaboratorioNo._1
         {
             string tipo;
             string nuevo;            
-            IList<Book> listaLibro = new List<Book>();
-            IList<Magazine> listaRevista = new List<Magazine>();
+            IList<Book> listaLibro = Book.makeBookList();
+            IList<Magazine> listaRevista = Magazine.makeMagazineList();
             int idRevista=1;
             int idLibro=1;                
             
@@ -23,8 +23,9 @@ namespace LaboratorioNo._1
             {
                 Book libro = new Book();
                 libro.Id=idLibro;
-                idLibro++;       
-                listaLibro.Add(libro.RegistroLibro(libro));
+                idLibro++;  
+                libro.RegistroLibro=libro;     
+                listaLibro.Add(libro.RegistroLibro);
                 libro.imprimirListadoLibro(listaLibro);
             }   
             else

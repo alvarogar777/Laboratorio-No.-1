@@ -3,12 +3,28 @@ using System.Globalization;
 using System.Collections.Generic;
 
 namespace LaboratorioNo._1{
-    public class Book : Publication
+    public class Book : Publication,IVisualizable
     {
         private int id;
         private string isbn;
         private bool readed;
         private int timeReaded;
+        private Book libro;
+        private static List<Book> bookList;
+     
+        public Book()
+        {
+
+        }
+
+        public Book(string title, DateTime editionDate,string editorial,string[] autores,int id,string isbn,bool readed,int timeReaded) : base(title,editionDate,editorial,autores)
+        {
+            Id=id;
+            Isbn=isbn;
+            Readed=readed;
+            TimeReaded=timeReaded;
+        }
+
         public int Id
         {
             get{return id;}
@@ -30,8 +46,30 @@ namespace LaboratorioNo._1{
             set{timeReaded=value;}
         }
 
-        public Book  RegistroLibro(Book libro)
+        public DateTime StartToSee(DateTime datel)
+        {
+            return datel;
+        }
+
+        public void StopToSee(DateTime datel,DateTime datef)
+        {
+
+        }
+
+        public static List<Book> makeBookList()
+        {
+            if(bookList==null)
+            {
+                bookList= new List<Book>();
+            }
+            return bookList;
+        }
+        
+        public Book  RegistroLibro
         {   
+            get{return libro;}
+            set {
+            libro = value;
             string nuevo;
             int contadorAutores=0;
             Console.WriteLine("Ingrese titulo del libro");
@@ -53,11 +91,12 @@ namespace LaboratorioNo._1{
                 Console.WriteLine("si:s o no:n");
                 nuevo = Console.ReadLine();
             }while(nuevo=="s");
-            //listaRevista.Add(revista);
-            return libro;                      
+                        
+            }                
         }
 
-        public string imprimirListadoLibro(IList<Book>listaLibro)
+      
+        public void imprimirListadoLibro(IList<Book>listaLibro)
         {
             foreach (Book elemento in listaLibro){
                 System.Console.WriteLine("*******************************");
@@ -71,7 +110,7 @@ namespace LaboratorioNo._1{
                     System.Console.WriteLine("{0} ", i);
                 }                
             } 
-            return "";
+         
         }
 
         

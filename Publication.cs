@@ -7,6 +7,19 @@ namespace LaboratorioNo._1{
         private string editorial;
         private string[] autores = new string[4];
 
+        public Publication()
+        {
+
+        }
+
+        public Publication(string title, DateTime editionDate,string editorial,string[] autores)
+        {
+            Title=title;
+            EditionDate=editionDate;
+            Editorial=editorial;
+            Autores=autores;
+        }
+
         public string Title
         {
             get{return title;}
@@ -28,5 +41,6 @@ namespace LaboratorioNo._1{
             set{autores=value;}
         }
 
+        
     }
 }

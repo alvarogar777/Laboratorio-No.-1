@@ -7,11 +7,30 @@ namespace LaboratorioNo._1
     public class Magazine : Publication
     {
         private int id;
+        private static List<Magazine> magazineList;
+
+        public Magazine()
+        {
+
+        }
+
+        public Magazine(string title, DateTime editionDate,string editorial,string[] autores,int id) : base(title,editionDate,editorial,autores)
+        {
+            Id=id;
+        }
        
         public int Id
         {
             get{return id;}
             set{id=value;}
+        }
+        public static List<Magazine> makeMagazineList()
+        {
+            if(magazineList==null)
+            {
+                magazineList= new List<Magazine>();
+            }
+            return magazineList;
         }
 
         public Magazine  RegistroRevista(Magazine revista)
@@ -41,7 +60,7 @@ namespace LaboratorioNo._1
             return revista;                      
         }
 
-        public string imprimirListadoRevista(IList<Magazine>listaRevista)
+        public void imprimirListadoRevista(IList<Magazine>listaRevista)
         {
             foreach (Magazine elemento in listaRevista){
                 System.Console.WriteLine("*******************************");
@@ -55,7 +74,6 @@ namespace LaboratorioNo._1
                     System.Console.WriteLine("{0} ", i);
                 }                
             } 
-            return "";
         }
 
     }
